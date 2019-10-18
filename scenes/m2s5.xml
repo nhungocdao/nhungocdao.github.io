@@ -1,0 +1,39 @@
+<krpano>
+	<scene name="m2s5" onstart="highlightedbar(floor9bg,f9r3bg); set(currentfloor,'floor9bg'); set(currentroom,'f9r3bg'); set(layer[scenename].html, 'The 9th Floor > Architecture Office');" thumburl="%FIRSTXML%/panos/m1s5/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="%FIRSTXML%/panos/m1s5/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="4456" tiledimageheight="4456">
+				<cube url="%FIRSTXML%/panos/m1s5/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2228" tiledimageheight="2228">
+				<cube url="%FIRSTXML%/panos/m1s5/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1114" tiledimageheight="1114">
+				<cube url="%FIRSTXML%/panos/m1s5/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="%FIRSTXML%/panos/m1s5/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="%FIRSTXML%/panos/m1s5/mobile_%s.jpg" />
+			</mobile>
+		</image>
+		<hotspot name="h1" style="hotspot_question_mark" ath="-110" atv="0" step="1"
+				 onhover="set(layer[tooltip].html, 'Exterior window'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[questioncon].visible, false); "
+		         onclick="set(layer[tooltip].html, 'Exterior window'); hientooltip(); set(autorotate.enabled, 'false'); hienquestion(exteriorwindow, 3, h1, 1); set(events.onmousedown,tween(layer[tooltip].alpha, 0.0, 0.25, default); set(layer[questioncon].visible, false););" />	
+		<hotspot name="h8" style="hotspot_question_mark" ath="63" atv="-1" step="1"
+				 onhover="set(layer[tooltip].html, 'Electrical switch'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default);"
+		         onclick="set(layer[tooltip].html, 'Electrical switch'); hientooltip(); set(autorotate.enabled, 'false'); set(events.onmousedown,tween(layer[tooltip].alpha, 0.0, 0.25, default));" />	
+		<hotspot name="h9" style="hotspot_question_mark" ath="25" atv="-45" step="1"
+				 onhover="set(layer[tooltip].html, 'Air conditioner'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[questioncon].visible, false); "
+		         onclick="set(layer[tooltip].html, 'Air conditioner'); hientooltip(); set(autorotate.enabled, 'false'); hienquestion(aircondition, 2, h9, 1); set(layer[questiontext].alpha,0); set(layer[questionvideo].visible,true); layer[questionvideo].togglepause(); set(events.onmousedown,tween(layer[tooltip].alpha, 0.0, 0.25, default); set(layer[questioncon].visible, false););" />	
+
+	</scene>
+</krpano>

@@ -1,0 +1,47 @@
+<krpano version="1.18" title="Virtual Tour" onstart="startup();">
+
+	<include url="skin/vtourskin.xml" />
+	<include url="data.xml" />
+	<include url="skin/youtube-player.xml" />
+	<include url="scenes/start.xml" />
+	<include url="scenes/m1s1.xml" />
+	<include url="scenes/m2s1.xml" />
+	<include url="scenes/m2s2.xml" />
+	<include url="scenes/m2s3.xml" />
+	<include url="scenes/m2s4.xml" />
+	<include url="scenes/m2s5.xml" />
+	<include url="scenes/m2s6.xml" />
+	<include url="scenes/m2s7.xml" />
+	<include url="scenes/m3s1.xml" />
+	<include url="scenes/m3s2.xml" />
+	<include url="scenes/m3s3.xml" />
+	<include url="scenes/m3s4.xml" />
+	<include url="scenes/m3s5.xml" />
+	
+	<!-- thay doi con tro va cach di chuyen -->
+	<events onxmlcomplete="action(dragcursor);" />
+	
+	<action name="dragcursor">
+			set(control.mousetype, drag2D);
+			set(cursors.url, %FIRSTXML%/skin/drag-cursors.png);
+			set(cursors.type, drag);
+			set(cursors.move,  2|0|30|32);
+			set(cursors.drag, 37|0|30|32);
+	</action>
+
+	<action name="startup">
+		if(startscene === null, set(startscene, 'start'));
+		if(language === null, set(language, 'english'););
+		if(partner === null, set(partner, 'cau'););
+		if(username === null, set(username, 'User A'));
+		if(userid === null, set(userid, 'ID: 860827A'));
+		logoloading();
+		loadscene(get(startscene), null, MERGE);
+	</action>
+	
+	<autorotate enabled="true"
+				waittime="1.5"
+				speed="2.0"
+				/>
+
+</krpano>

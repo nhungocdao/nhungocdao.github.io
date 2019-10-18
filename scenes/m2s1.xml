@@ -1,0 +1,68 @@
+<krpano>
+	<scene name="m2s1" onstart="highlightedbar(floor1bg,f1r2bg); set(currentfloor,'floor1bg'); set(currentroom,'f1r2bg'); set(layer[scenename].html, 'The 1st Floor > Lobby');" thumburl="%FIRSTXML%/panos/m1s1/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="%FIRSTXML%/panos/m1s1/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="4456" tiledimageheight="4456">
+				<cube url="%FIRSTXML%/panos/m1s1/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2228" tiledimageheight="2228">
+				<cube url="%FIRSTXML%/panos/m1s1/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1114" tiledimageheight="1114">
+				<cube url="%FIRSTXML%/panos/m1s1/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="%FIRSTXML%/panos/m1s1/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="%FIRSTXML%/panos/m1s1/mobile_%s.jpg" />
+			</mobile>
+		</image>
+		
+		<hotspot name="concretestaircase" style="hotspot_ani_red" ath="-33" atv="-2"
+				 onhover="set(layer[tooltip].html, 'Concrete staircase'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Concrete staircase'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('',get(name)); highlighteduniformat(l3s16bg,l2s7bg,l1s3bg);" />	
+		<hotspot name="steelstaircase" style="hotspot_ani_red" ath="-13" atv="-2"
+				 onhover="set(layer[tooltip].html, 'Steel staircase'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Steel staircase'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('',get(name)); highlighteduniformat(l3s16bg,l2s7bg,l1s3bg);" />	
+		<hotspot name="escalator" style="hotspot_ani_red" ath="-45" atv="-2"
+				 onhover="set(layer[tooltip].html, 'Escalator'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Escalator'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('lu8ZlwSRV44',get(name)); highlighteduniformat(l3s22bg,l2s9bg,l1s4bg);" />	
+		<hotspot name="mnesystem" style="hotspot_ani_red" ath="-75" atv="-15"
+				 onhover="set(layer[tooltip].html, 'M&amp;E system'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'M&amp;E system'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('',get(name)); highlighteduniformat('',l2s11bg,l1s4bg);" />	
+		<hotspot name="hvacsystem" style="hotspot_ani_red" ath="125" atv="-20"
+				 onhover="set(layer[tooltip].html, 'HVAC system'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'HVAC system'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('',get(name)); highlighteduniformat('',l2s11bg,l1s4bg);" />	
+		<hotspot name="mobilescaffold" style="hotspot_ani_red" ath="41" atv="-7"
+				 onhover="set(layer[tooltip].html, 'Mobile scaffold'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Mobile scaffold'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('aqL2PwcxijE',get(name),'qKxHapAPdhQ'); highlighteduniformat(l3s48bg,l2s14bg,l1s5bg);" />	
+		<hotspot name="scaffold" style="hotspot_ani_red" ath="135" atv="-0"
+				 onhover="set(layer[tooltip].html, 'Scaffold'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Scaffold'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('qKxHapAPdhQ',get(name)); highlighteduniformat(l3s48bg,l2s14bg,l1s5bg);" />	
+		<hotspot name="curtainwall" style="hotspot_ani_red" ath="61" atv="-5"
+				 onhover="set(layer[tooltip].html, 'Curtain wall'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Curtain wall'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('DGcSMsaWcbI',get(name)); highlighteduniformat(l3s9bg,l2s4bg,l1s2bg);" />	
+		<hotspot name="liftscaffolding" style="hotspot_ani_red" ath="33" atv="0"
+				 onhover="set(layer[tooltip].html, 'Lift scaffolding'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Lift scaffolding'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('73jTmB1d1DQ',get(name)); highlighteduniformat(l3s45bg,l2s14bg,l1s5bg);" />	
+		<hotspot name="safetynet" style="hotspot_ani_red" ath="0" atv="-60"
+				 onhover="set(layer[tooltip].html, 'Safety net'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[materialcon].visible, false); highlighteduniformat(););"
+		         onclick="set(layer[tooltip].html, 'Safety net'); hientooltip(); set(autorotate.enabled, 'false'); hienthumb('',get(name)); highlighteduniformat(l3s54bg,l2s16bg,l1s7bg);" />	
+
+	</scene>
+</krpano>

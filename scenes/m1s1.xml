@@ -1,0 +1,40 @@
+<krpano>
+	<scene name="m1s1" onstart="" thumburl="" lat="" lng="" heading="">
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<layer name="slidebg" type="container" align="lefttop" width="100%" height="100%" bgcolor="0xcccccc" bgalpha="1" scalechildren="true" >
+			<layer name="slidef" url="%FIRSTXML%/panos/m0s1/Slide1.JPG" align="lefttop" width="100%" height="-120">
+				<layer name="link1" url="%FIRSTXML%/panos/m0s1/link1.jpg" align="lefttop" x="25%" y="58.7962962962963%" oy="-2" height="41.38888888888889%" width="27.60416666666667%" onclick="youtubeplayer_open(hguBmcX9GMQ); set(layer[youtubeplayer_bg].align, righttop);"/>
+			</layer>
+			<layer name="thumpscroll" url="%FIRSTXML%/plugins/scrollarea.swf" alturl="%FIRSTXML%/plugins/scrollarea.js" align="leftbottom" width="" height="120" direction="h" onloaded="renderimage(,49, '%FIRSTXML%/panos/m0s1/Slide'); setcenter(0,0);"/>
+		</layer>
+		
+		<action name="renderimage">
+			mul(w,%2,190);
+			add(w,10);
+			set(plugin[thumpscroll].width, get(w));
+			if(%1 != NEXT, set(i,1));
+			if(i LT %2,
+				txtadd(imageurl, %3, get(i),'.JPG');
+				txtadd(tempurl, %3, get(i),'.JPG');
+				txtadd(thumbname,'slide',get(i));
+				removeplugin(get(thumbname));
+				addplugin(get(thumbname));
+				set(plugin[get(thumbname)].url, get(tempurl));
+				set(plugin[get(thumbname)].parent, 'layer[thumpscroll]');
+				set(plugin[get(thumbname)].align, lefttop);
+				set(plugin[get(thumbname)].goc, get(imageurl));
+				set(plugin[get(thumbname)].onclick, 'set(layer[slidef].url,get(goc)); if(name == slide1, set(layer[link1].visible, true), set(layer[link1].visible, false));');
+				sub(tempi,get(i),1);
+				mul(tempx, get(tempi), 190);
+				set(plugin[get(thumbname)].x, get(tempx));
+				add(plugin[get(thumbname)].x, 10);
+				set(plugin[get(thumbname)].y, 15);
+				set(plugin[get(thumbname)].width, 180);
+				set(plugin[get(thumbname)].height, 90);
+				inc(i);
+				renderimage(NEXT,%2,%3);
+			  );
+		</action>
+
+	</scene>
+</krpano>

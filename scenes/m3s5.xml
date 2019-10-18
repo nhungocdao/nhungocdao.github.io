@@ -1,0 +1,32 @@
+<krpano>
+	<scene name="m3s5" onstart="highlightedbar(floorgbg,fgr5bg); set(currentfloor,'floorgbg'); set(currentroom,'fgr5bg'); set(layer[scenename].html, 'The Ground Floor > Football Yard');" thumburl="%FIRSTXML%/panos/m1s4/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="30" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="%FIRSTXML%/panos/m1s4/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="4456" tiledimageheight="4456">
+				<cube url="%FIRSTXML%/panos/m1s4/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2228" tiledimageheight="2228">
+				<cube url="%FIRSTXML%/panos/m1s4/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1114" tiledimageheight="1114">
+				<cube url="%FIRSTXML%/panos/m1s4/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="%FIRSTXML%/panos/m1s4/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="%FIRSTXML%/panos/m1s4/mobile_%s.jpg" />
+			</mobile>
+		</image>
+		<hotspot name="h1" style="hotspot_question_mark" ath="4" atv="-51" onclick="youtubeplayer_open(vrtffBnx65k); set(autorotate.enabled, 'false'); set(layer[youtubeplayer_bg].align, righttop);"/>	
+
+		<hotspot name="h10" style="hotspot_question_mark" ath="4" atv="-51" step="1"
+				 onhover="set(layer[tooltip].html, 'Boatswain chair'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[questioncon].visible, false); "
+		         onclick="set(layer[tooltip].html, 'Boatswain chair'); hientooltip(); set(autorotate.enabled, 'false'); hienquestion(boatswain, 1, h10, 1); set(events.onmousedown,tween(layer[tooltip].alpha, 0.0, 0.25, default); set(layer[questioncon].visible, false););" />	
+	</scene>
+</krpano>

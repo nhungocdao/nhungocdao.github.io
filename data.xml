@@ -1,0 +1,120 @@
+<krpano>
+
+	<strings name="english"
+		floorb = "Basement"
+		floorg = "Ground Floor"
+		floor1 = "1st Floor"
+		floor2 = "2nd Floor"
+		floor3 = "3rd Floor"
+		floor4 = "4th Floor"
+		floor5 = "5th Floor"
+		floor6 = "6th Floor"
+		floor7 = "7th Floor"
+		floor8 = "8th Floor"
+		floor9 = "9th Floor"
+		floor10 = "10th Floor"
+		floor11 = "11th Floor"
+		floor12 = "12th Floor"
+		floorr = "Roof"
+		floorbr1 = "Storage"
+		floorbr2 = "Maintenance room"
+		floorgr1 = "Lobby"
+		floorgr2 = "Cafeterian"
+		floorgr3 = "Gymnasium"
+		floorgr4 = "Indoor sport room"
+		floorgr5 = "Football yard"
+		floorgr6 = "Restroom"
+		floor1r1 = "Corridor"
+		floor1r2 = "Lobby"
+		floor1r3 = "Admin. office"
+		floor1r4 = "Healthcare room"
+		floor1r5 = "Conference room"
+		floor1r6 = "Library"
+		floor1r7 = "Restroom"
+		floor5r1 = "Corridor"
+		floor5r2 = "Elevator Lobby"
+		floor5r3 = "Civil Engr. Office"
+		floor5r4 = "Classroom 1"
+		floor5r5 = "Classroom 2"
+		floor5r6 = "Classroom 3"
+		floor5r7 = "Laboratory 1"
+		floor5r8 = "Laboratory 2"
+		floor5r9 = "Laboratory 3"
+		floor5r10 = "Seminar room 1"
+		floor5r11 = "Seminar room 2"
+		floor5r12 = "Simulation room"
+		floor5r13 = "Professor room 1"
+		floor5r14 = "Professor room 2"
+		floor5r15 = "Professor room 3"
+		floor5r16 = "Civil Engr. Lab"
+		floor5r17 = "Restroom"
+		floor9r1 = "Corridor"
+		floor9r2 = "Elevator Lobby"
+		floor9r3 = "Architec. Office"
+		floor9r4 = "Classroom 1"
+		floor9r5 = "Classroom 2"
+		floor9r6 = "Classroom 3"
+		floor9r7 = "Laboratory 1"
+		floor9r8 = "Laboratory 2"
+		floor9r9 = "Laboratory 3"
+		floor9r10 = "Seminar room 1"
+		floor9r11 = "Seminar room 2"
+		floor9r12 = "Simulation room"
+		floor9r13 = "Professor room 1"
+		floor9r14 = "Professor room 2"
+		floor9r15 = "Professor room 3"
+		floor9r16 = "Architec. Engr. Lab"
+		floor9r17 = "Restroom"
+		floorrr1 = "Corridor"
+		floorrr2 = "Elevator Lobby"
+		floorrr3 = "Gymnasium"
+		floorrr4 = "Smoking room"
+		floorrr5 = "Restroom"
+		airconditionvideo= "01DbyFm_LNU"
+		aircondition1 = "An electrician used a mobile scaffold to install new air-conditioner in an office. They secured the mobile scaffold and used their own body harness properly during installation[/br][/br]
+		[b]Is there any hazard in this case?[/b]"
+		aircondition2 = "An electrician used a mobile scaffold to install new air-conditioner in an office. They secured the mobile scaffold and used their own body harness properly during installation[/br]
+		[b]What type of hazard would be?[/b][/br] 
+		a.	Catch-between the ceiling and air-conditioner[/br]
+		b.	Electrocution due to not switching off the main power[/br]
+		c.	Fall from mobile scaffold[/br]
+		d.	Struck by air-conditioner"
+		exteriorwindowvideo= "YrCx98icG50"
+		exteriorwindow1 = "Please take a look to the video presenting a worker who is installing an exterior window from inside the building at the 9-th floor.[/br]
+		[b]Is there any hazard in this case?[/b]"
+		exteriorwindow2 = "Please take a look to the video presenting a worker who is installing an exterior window from inside the building at the 9-th floor.[/br]
+		[b]What type of hazard would be?[/b][/br] 
+		a.	Lack of scaffold outside the building[/br]
+		b.	Lack of safety net outside the building[/br]
+		c.	Worker does not wear his gloves during working[/br]
+		d.	Struck by a crane hooks"
+		mobilescaffoldvideo= "w55JCZpKm0w"
+		mobilescaffold1 = "Two workers collaborated to carry out the ceiling installation from a mobile scaffold, which is erected properly along corridor[/br][/br]
+		[b]Is there any hazard in this case?[/b]"
+		mobilescaffold2 = "Two workers collaborated to carry out the ceiling installation from a mobile scaffold, which is erected properly along corridor[/br][/br]
+		[b]What type of hazard would be?[/b][/br] 
+		a.	Mobile scaffold collapsed[/br]
+		b.	Electrocution[/br]
+		c.	Fall due to overstretching the mobile scaffold[/br]
+		d.	Caught-between scaffold and wall"
+		laddervideo= "aqL2PwcxijE"
+		ladder1 = "A worker used a temporary ladder to install a new light.[/br][/br]
+		[b]Is there any hazard in this case?[/b]"
+		ladder2 = "A worker used a temporary ladder to install a new light.[/br]
+		[b]What type of hazard would be?[/b][/br] 
+		a.	The ladder collapsed[/br]
+		b.	Electrocution[/br]
+		c.	Fall from temporary ladder[/br]
+		d.	Lack of body harness"
+		boatswainvideo= "qR2XDLrhOoo"
+		boatswain1 = "A worker used a Boatswain chair to handle the finishing work of exterior window.[/br][/br]
+		[b]Is there any hazard in this case?[/b]"
+		boatswain2 = "A worker used a Boatswain chair to handle the finishing work of exterior window.[/br]
+		[b]What type of hazard would be?[/b][/br] 
+		a.	Fall from Boatswain chair due to lack of independent life line.[/br]
+		b.	Struck-by falling object.[/br]
+		c.	Caught-between Boatswain chair and wall.[/br]
+		d.	Lack of body harness."
+	/>
+
+</krpano>

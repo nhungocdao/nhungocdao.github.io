@@ -1,0 +1,37 @@
+<krpano>
+	<scene name="m2s7" onstart="highlightedbar(floorrbg,frr1bg); set(currentfloor,'floorrbg'); set(currentroom,'frr1bg');" thumburl="%FIRSTXML%/panos/m1s7/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="%FIRSTXML%/panos/m1s7/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="4456" tiledimageheight="4456">
+				<cube url="%FIRSTXML%/panos/m1s7/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2228" tiledimageheight="2228">
+				<cube url="%FIRSTXML%/panos/m1s7/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1114" tiledimageheight="1114">
+				<cube url="%FIRSTXML%/panos/m1s7/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="%FIRSTXML%/panos/m1s7/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="%FIRSTXML%/panos/m1s7/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<hotspot name="h6" style="hotspot_question_mark" ath="-58" atv="-3" step="1"
+				 onhover="set(layer[tooltip].html, 'Mobile scaffold'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[questioncon].visible, false); "
+		         onclick="set(layer[tooltip].html, 'Mobile scaffold'); hientooltip(); set(autorotate.enabled, 'false'); hienquestion(mobilescaffold, 3, h6, 1); set(events.onmousedown,tween(layer[tooltip].alpha, 0.0, 0.25, default); set(layer[questioncon].visible, false););" />	
+		<hotspot name="h7" style="hotspot_question_mark" ath="-19" atv="-2" step="1"
+				 onhover="set(layer[tooltip].html, 'Temporary ladder'); hientooltip();" 
+				 onout="tween(layer[tooltip].alpha, 0.0, 0.25, default); delayedcall(spot, 0.3, set(layer[questioncon].visible, false); "
+		         onclick="set(layer[tooltip].html, 'Temporary ladder'); hientooltip(); set(autorotate.enabled, 'false'); hienquestion(ladder, 3, h7, 2); set(events.onmousedown,tween(layer[tooltip].alpha, 0.0, 0.25, default); set(layer[questioncon].visible, false););" />	
+
+		
+	</scene>
+</krpano>

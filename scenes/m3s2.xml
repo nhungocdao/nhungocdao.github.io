@@ -1,0 +1,27 @@
+<krpano>
+	<scene name="m3s2" onstart="highlightedbar(floor5bg,f5r3bg); set(currentfloor,'floor5bg'); set(currentroom,'f5r3bg'); set(layer[scenename].html, 'The 5th Floor > Civil Engineering Office');" thumburl="%FIRSTXML%/panos/m2s2/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="%FIRSTXML%/panos/m2s2/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="4456" tiledimageheight="4456">
+				<cube url="%FIRSTXML%/panos/m2s2/l4_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="2228" tiledimageheight="2228">
+				<cube url="%FIRSTXML%/panos/m2s2/l3_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="1114" tiledimageheight="1114">
+				<cube url="%FIRSTXML%/panos/m2s2/l2_%s_%0v_%0h.jpg" />
+			</level>
+			<level tiledimagewidth="512" tiledimageheight="512">
+				<cube url="%FIRSTXML%/panos/m2s2/l1_%s_%0v_%0h.jpg" />
+			</level>
+			<mobile>
+				<cube url="%FIRSTXML%/panos/m2s2/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+	</scene>
+</krpano>
